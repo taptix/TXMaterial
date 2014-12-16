@@ -13,6 +13,7 @@
 		A15322CD1A3EEB5B00849D15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15322CC1A3EEB5B00849D15 /* Images.xcassets */; };
 		A15322D01A3EEB5B00849D15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15322CE1A3EEB5B00849D15 /* LaunchScreen.xib */; };
 		A15322DC1A3EEB5B00849D15 /* MDTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15322DB1A3EEB5B00849D15 /* MDTestTests.swift */; };
+		A15322E61A3EEB7300849D15 /* MDProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15322E51A3EEB7300849D15 /* MDProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A15322D51A3EEB5B00849D15 /* MDTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15322DA1A3EEB5B00849D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A15322DB1A3EEB5B00849D15 /* MDTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDTestTests.swift; sourceTree = "<group>"; };
+		A15322E51A3EEB7300849D15 /* MDProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				A15322C51A3EEB5B00849D15 /* AppDelegate.swift */,
 				A15322C71A3EEB5B00849D15 /* ViewController.swift */,
+				A15322E51A3EEB7300849D15 /* MDProgressView.swift */,
 				A15322C91A3EEB5B00849D15 /* Main.storyboard */,
 				A15322CC1A3EEB5B00849D15 /* Images.xcassets */,
 				A15322CE1A3EEB5B00849D15 /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				A15322C81A3EEB5B00849D15 /* ViewController.swift in Sources */,
 				A15322C61A3EEB5B00849D15 /* AppDelegate.swift in Sources */,
+				A15322E61A3EEB7300849D15 /* MDProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
