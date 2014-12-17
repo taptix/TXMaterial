@@ -25,10 +25,6 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-	override func viewDidAppear(animated: Bool) {
-//		self.progressView.animate()
-//		self.progressView.isIndeterminate = true
-	}
 	
 	@IBAction func setProgress(sender: AnyObject) {
 		let slider = sender as UISlider
@@ -39,6 +35,19 @@ class ViewController: UIViewController {
 		for spinner in self.progressViews{
 			spinner.isAnimating = !spinner.isAnimating
 		}
+	}
+
+	@IBAction func set0(sender: AnyObject) {
+		self.progressView.setProgress(0.0, animated: true)
+	}
+	@IBAction func set25(sender: AnyObject) {
+		self.progressView.setProgress(0.25, animated: true)
+	}
+	@IBAction func set50(sender: AnyObject) {
+		self.progressView.setProgress(0.50, animated: true)
+	}
+	@IBAction func set100(sender: AnyObject) {
+		self.progressView.setProgress(1.0, animated: true)
 	}
 }
 

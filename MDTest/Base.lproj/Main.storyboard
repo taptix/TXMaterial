@@ -27,7 +27,7 @@
                                         <color key="value" red="0.95209246873855591" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isIndeterminate" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="alwaysAnimate" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="alwaysAnimate" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJQ-Oz-1v2" customClass="ActivityProgressView" customModule="TXMaterialDesign">
@@ -76,29 +76,76 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SAA-2q-EQJ">
-                                <rect key="frame" x="158.5" y="438" width="284" height="31"/>
+                                <rect key="frame" x="158" y="438" width="284" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="WGe-bn-Aay"/>
                                 </constraints>
+                                <color key="minimumTrackTintColor" red="0.95209246873855591" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="setProgress:" destination="BYZ-38-t0r" eventType="valueChanged" id="TYb-JH-fBZ"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vw6-mz-gbB">
+                                <rect key="frame" x="221.5" y="502" width="33" height="30"/>
+                                <state key="normal" title="25%">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="set25:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBL-fL-PcS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vP2-gb-E3C">
+                                <rect key="frame" x="283.5" y="502" width="33" height="30"/>
+                                <state key="normal" title="50%">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="set50:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGu-b5-E7m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXU-DV-BwG">
+                                <rect key="frame" x="349.5" y="502" width="41" height="30"/>
+                                <state key="normal" title="100%">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="set100:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Pp-yM-fAt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kD-ac-VwM">
+                                <rect key="frame" x="172.5" y="502" width="30" height="30"/>
+                                <state key="normal" title="0%">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="set0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SM3-nX-2S9"/>
+                                    <action selector="set25:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eg7-to-5nS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SAA-2q-EQJ" firstAttribute="top" secondItem="nAt-OD-8aA" secondAttribute="bottom" constant="24" id="0SO-P2-9aq"/>
                             <constraint firstItem="93h-t1-A2N" firstAttribute="centerY" secondItem="cA5-aV-NVa" secondAttribute="centerY" id="2K9-aM-sbJ"/>
                             <constraint firstItem="cA5-aV-NVa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="A8L-Zk-HXg"/>
+                            <constraint firstItem="vw6-mz-gbB" firstAttribute="leading" secondItem="7kD-ac-VwM" secondAttribute="trailing" constant="19" id="Ccn-ww-M74"/>
                             <constraint firstItem="cA5-aV-NVa" firstAttribute="leading" secondItem="9Th-ws-DPG" secondAttribute="trailing" constant="49" id="Cp9-Ca-abe"/>
                             <constraint firstAttribute="centerX" secondItem="cA5-aV-NVa" secondAttribute="centerX" id="DNJ-K3-KY4"/>
                             <constraint firstItem="93h-t1-A2N" firstAttribute="leading" secondItem="cA5-aV-NVa" secondAttribute="trailing" constant="37" id="KGd-hu-86J"/>
+                            <constraint firstItem="WXU-DV-BwG" firstAttribute="leading" secondItem="vP2-gb-E3C" secondAttribute="trailing" constant="33" id="LvW-jL-Wq3"/>
                             <constraint firstItem="nAt-OD-8aA" firstAttribute="centerX" secondItem="cA5-aV-NVa" secondAttribute="centerX" id="NjO-f4-PLB"/>
+                            <constraint firstItem="vP2-gb-E3C" firstAttribute="top" secondItem="SAA-2q-EQJ" secondAttribute="bottom" constant="34" id="Vd0-aJ-owB"/>
                             <constraint firstItem="fJQ-Oz-1v2" firstAttribute="top" secondItem="cA5-aV-NVa" secondAttribute="bottom" constant="53" id="WwT-Co-9wx"/>
+                            <constraint firstItem="vP2-gb-E3C" firstAttribute="leading" secondItem="vw6-mz-gbB" secondAttribute="trailing" constant="29" id="Y7I-VP-BrD"/>
+                            <constraint firstItem="vw6-mz-gbB" firstAttribute="centerY" secondItem="vP2-gb-E3C" secondAttribute="centerY" id="ZRg-UN-JH7"/>
                             <constraint firstItem="cA5-aV-NVa" firstAttribute="centerX" secondItem="fJQ-Oz-1v2" secondAttribute="centerX" id="caq-r0-vsJ"/>
                             <constraint firstItem="SAA-2q-EQJ" firstAttribute="centerX" secondItem="nAt-OD-8aA" secondAttribute="centerX" constant="0.5" id="cpo-TV-lXv"/>
                             <constraint firstItem="9Th-ws-DPG" firstAttribute="centerY" secondItem="cA5-aV-NVa" secondAttribute="centerY" id="hFg-PA-myL"/>
+                            <constraint firstItem="vP2-gb-E3C" firstAttribute="centerY" secondItem="WXU-DV-BwG" secondAttribute="centerY" id="hUN-I9-phw"/>
+                            <constraint firstItem="vw6-mz-gbB" firstAttribute="centerY" secondItem="7kD-ac-VwM" secondAttribute="centerY" id="l7w-eE-et0"/>
                             <constraint firstItem="nAt-OD-8aA" firstAttribute="top" secondItem="cA5-aV-NVa" secondAttribute="bottom" constant="281" id="nUh-5j-6g2"/>
+                            <constraint firstItem="vw6-mz-gbB" firstAttribute="leading" secondItem="7kD-ac-VwM" secondAttribute="trailing" constant="19" id="vYy-2a-gXV"/>
+                            <constraint firstItem="SAA-2q-EQJ" firstAttribute="centerX" secondItem="vP2-gb-E3C" secondAttribute="centerX" id="zZk-s0-T79"/>
                         </constraints>
                     </view>
                     <connections>

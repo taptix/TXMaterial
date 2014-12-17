@@ -50,6 +50,28 @@ import UIKit
 		self.setup()
 	}
 	
+	public func setProgress(progress: Float, animated: Bool){
+		self.progress = progress
+		if	animated{
+			let timingFunction = CAMediaTimingFunction(controlPoints: 0.5, 0.0, 0.5, 1.0)
+			let presentationLayer = self.shapeLayer.presentationLayer() as CAShapeLayer
+			let progressAnim = CABasicAnimation(keyPath: "strokeEnd")
+			progressAnim.fromValue = presentationLayer.strokeEnd
+			progressAnim.toValue = CGFloat(self.progress)
+			progressAnim.duration = 2.0
+			progressAnim.timingFunction = timingFunction
+			self.shapeLayer.addAnimation(progressAnim, forKey: "setStrokeEnd")
+			
+			let progressAnim2 = CABasicAnimation(keyPath: "strokeStart")
+			progressAnim2.fromValue = presentationLayer.strokeStart
+			progressAnim2.toValue = CGFloat(self.progress / 2.0)
+			progressAnim2.duration = 2.0
+			progressAnim2.timingFunction = timingFunction
+			self.shapeLayer.addAnimation(progressAnim2, forKey: "setStrokeStart")
+		}
+	}
+	
+	
 	func startAnimating(){
 		self.isAnimating = true
 	}
@@ -125,8 +147,9 @@ import UIKit
 				if let animation = self.shapeLayer.animationForKey(key){
 					self.shapeLayer.removeAnimationForKey(key)
 				}
-
 			}
+			self.shapeLayer.transform = CATransform3DMakeRotation(CGFloat(-M_PI/2.0), 0.0, 0.0, 1.0)
+
 		}
 	}
 }
