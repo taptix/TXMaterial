@@ -13,7 +13,12 @@
 		A15322CD1A3EEB5B00849D15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15322CC1A3EEB5B00849D15 /* Images.xcassets */; };
 		A15322D01A3EEB5B00849D15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15322CE1A3EEB5B00849D15 /* LaunchScreen.xib */; };
 		A15322DC1A3EEB5B00849D15 /* MDTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15322DB1A3EEB5B00849D15 /* MDTestTests.swift */; };
-		A15322E61A3EEB7300849D15 /* MDProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15322E51A3EEB7300849D15 /* MDProgressView.swift */; };
+		A15322FA1A41B23000849D15 /* TXMaterialDesign.h in Headers */ = {isa = PBXBuildFile; fileRef = A15322F91A41B23000849D15 /* TXMaterialDesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A15323001A41B23000849D15 /* TXMaterialDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15322F51A41B23000849D15 /* TXMaterialDesign.framework */; };
+		A15323091A41B23000849D15 /* TXMaterialDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15323081A41B23000849D15 /* TXMaterialDesignTests.swift */; };
+		A153230C1A41B23000849D15 /* TXMaterialDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15322F51A41B23000849D15 /* TXMaterialDesign.framework */; };
+		A153230D1A41B23000849D15 /* TXMaterialDesign.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A15322F51A41B23000849D15 /* TXMaterialDesign.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A15323171A41B37D00849D15 /* ActivityProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15323161A41B37D00849D15 /* ActivityProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +29,42 @@
 			remoteGlobalIDString = A15322BF1A3EEB5B00849D15;
 			remoteInfo = MDTest;
 		};
+		A15323011A41B23000849D15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15322B81A3EEB5B00849D15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15322F41A41B23000849D15;
+			remoteInfo = TXMaterialDesign;
+		};
+		A15323031A41B23000849D15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15322B81A3EEB5B00849D15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15322BF1A3EEB5B00849D15;
+			remoteInfo = MDTest;
+		};
+		A153230A1A41B23000849D15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15322B81A3EEB5B00849D15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15322F41A41B23000849D15;
+			remoteInfo = TXMaterialDesign;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A15323111A41B23100849D15 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A153230D1A41B23000849D15 /* TXMaterialDesign.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A15322C01A3EEB5B00849D15 /* MDTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,7 +77,13 @@
 		A15322D51A3EEB5B00849D15 /* MDTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15322DA1A3EEB5B00849D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A15322DB1A3EEB5B00849D15 /* MDTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDTestTests.swift; sourceTree = "<group>"; };
-		A15322E51A3EEB7300849D15 /* MDProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDProgressView.swift; sourceTree = "<group>"; };
+		A15322F51A41B23000849D15 /* TXMaterialDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TXMaterialDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15322F81A41B23000849D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15322F91A41B23000849D15 /* TXMaterialDesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXMaterialDesign.h; sourceTree = "<group>"; };
+		A15322FF1A41B23000849D15 /* TXMaterialDesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXMaterialDesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15323071A41B23000849D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15323081A41B23000849D15 /* TXMaterialDesignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXMaterialDesignTests.swift; sourceTree = "<group>"; };
+		A15323161A41B37D00849D15 /* ActivityProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A153230C1A41B23000849D15 /* TXMaterialDesign.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +99,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15322F11A41B23000849D15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15322FC1A41B23000849D15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15323001A41B23000849D15 /* TXMaterialDesign.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +125,8 @@
 			children = (
 				A15322C21A3EEB5B00849D15 /* MDTest */,
 				A15322D81A3EEB5B00849D15 /* MDTestTests */,
+				A15322F61A41B23000849D15 /* TXMaterialDesign */,
+				A15323051A41B23000849D15 /* TXMaterialDesignTests */,
 				A15322C11A3EEB5B00849D15 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +136,8 @@
 			children = (
 				A15322C01A3EEB5B00849D15 /* MDTest.app */,
 				A15322D51A3EEB5B00849D15 /* MDTestTests.xctest */,
+				A15322F51A41B23000849D15 /* TXMaterialDesign.framework */,
+				A15322FF1A41B23000849D15 /* TXMaterialDesignTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +147,6 @@
 			children = (
 				A15322C51A3EEB5B00849D15 /* AppDelegate.swift */,
 				A15322C71A3EEB5B00849D15 /* ViewController.swift */,
-				A15322E51A3EEB7300849D15 /* MDProgressView.swift */,
 				A15322C91A3EEB5B00849D15 /* Main.storyboard */,
 				A15322CC1A3EEB5B00849D15 /* Images.xcassets */,
 				A15322CE1A3EEB5B00849D15 /* LaunchScreen.xib */,
@@ -115,7 +180,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A15322F61A41B23000849D15 /* TXMaterialDesign */ = {
+			isa = PBXGroup;
+			children = (
+				A15323161A41B37D00849D15 /* ActivityProgressView.swift */,
+				A15322F91A41B23000849D15 /* TXMaterialDesign.h */,
+				A15322F71A41B23000849D15 /* Supporting Files */,
+			);
+			path = TXMaterialDesign;
+			sourceTree = "<group>";
+		};
+		A15322F71A41B23000849D15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A15322F81A41B23000849D15 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A15323051A41B23000849D15 /* TXMaterialDesignTests */ = {
+			isa = PBXGroup;
+			children = (
+				A15323081A41B23000849D15 /* TXMaterialDesignTests.swift */,
+				A15323061A41B23000849D15 /* Supporting Files */,
+			);
+			path = TXMaterialDesignTests;
+			sourceTree = "<group>";
+		};
+		A15323061A41B23000849D15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A15323071A41B23000849D15 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A15322F21A41B23000849D15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15322FA1A41B23000849D15 /* TXMaterialDesign.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		A15322BF1A3EEB5B00849D15 /* MDTest */ = {
@@ -125,10 +236,12 @@
 				A15322BC1A3EEB5B00849D15 /* Sources */,
 				A15322BD1A3EEB5B00849D15 /* Frameworks */,
 				A15322BE1A3EEB5B00849D15 /* Resources */,
+				A15323111A41B23100849D15 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A153230B1A41B23000849D15 /* PBXTargetDependency */,
 			);
 			name = MDTest;
 			productName = MDTest;
@@ -153,6 +266,43 @@
 			productReference = A15322D51A3EEB5B00849D15 /* MDTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A15322F41A41B23000849D15 /* TXMaterialDesign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A153230E1A41B23100849D15 /* Build configuration list for PBXNativeTarget "TXMaterialDesign" */;
+			buildPhases = (
+				A15322F01A41B23000849D15 /* Sources */,
+				A15322F11A41B23000849D15 /* Frameworks */,
+				A15322F21A41B23000849D15 /* Headers */,
+				A15322F31A41B23000849D15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TXMaterialDesign;
+			productName = TXMaterialDesign;
+			productReference = A15322F51A41B23000849D15 /* TXMaterialDesign.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A15322FE1A41B23000849D15 /* TXMaterialDesignTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A15323121A41B23100849D15 /* Build configuration list for PBXNativeTarget "TXMaterialDesignTests" */;
+			buildPhases = (
+				A15322FB1A41B23000849D15 /* Sources */,
+				A15322FC1A41B23000849D15 /* Frameworks */,
+				A15322FD1A41B23000849D15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A15323021A41B23000849D15 /* PBXTargetDependency */,
+				A15323041A41B23000849D15 /* PBXTargetDependency */,
+			);
+			name = TXMaterialDesignTests;
+			productName = TXMaterialDesignTests;
+			productReference = A15322FF1A41B23000849D15 /* TXMaterialDesignTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +316,13 @@
 						CreatedOnToolsVersion = 6.1.1;
 					};
 					A15322D41A3EEB5B00849D15 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A15322BF1A3EEB5B00849D15;
+					};
+					A15322F41A41B23000849D15 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A15322FE1A41B23000849D15 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = A15322BF1A3EEB5B00849D15;
 					};
@@ -186,6 +343,8 @@
 			targets = (
 				A15322BF1A3EEB5B00849D15 /* MDTest */,
 				A15322D41A3EEB5B00849D15 /* MDTestTests */,
+				A15322F41A41B23000849D15 /* TXMaterialDesign */,
+				A15322FE1A41B23000849D15 /* TXMaterialDesignTests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +367,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A15322F31A41B23000849D15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15322FD1A41B23000849D15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -217,7 +390,6 @@
 			files = (
 				A15322C81A3EEB5B00849D15 /* ViewController.swift in Sources */,
 				A15322C61A3EEB5B00849D15 /* AppDelegate.swift in Sources */,
-				A15322E61A3EEB7300849D15 /* MDProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +401,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A15322F01A41B23000849D15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15323171A41B37D00849D15 /* ActivityProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15322FB1A41B23000849D15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15323091A41B23000849D15 /* TXMaterialDesignTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +424,21 @@
 			isa = PBXTargetDependency;
 			target = A15322BF1A3EEB5B00849D15 /* MDTest */;
 			targetProxy = A15322D61A3EEB5B00849D15 /* PBXContainerItemProxy */;
+		};
+		A15323021A41B23000849D15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15322F41A41B23000849D15 /* TXMaterialDesign */;
+			targetProxy = A15323011A41B23000849D15 /* PBXContainerItemProxy */;
+		};
+		A15323041A41B23000849D15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15322BF1A3EEB5B00849D15 /* MDTest */;
+			targetProxy = A15323031A41B23000849D15 /* PBXContainerItemProxy */;
+		};
+		A153230B1A41B23000849D15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15322F41A41B23000849D15 /* TXMaterialDesign */;
+			targetProxy = A153230A1A41B23000849D15 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -392,6 +595,81 @@
 			};
 			name = Release;
 		};
+		A153230F1A41B23100849D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TXMaterialDesign/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A15323101A41B23100849D15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TXMaterialDesign/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A15323131A41B23100849D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TXMaterialDesignTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MDTest.app/MDTest";
+			};
+			name = Debug;
+		};
+		A15323141A41B23100849D15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TXMaterialDesignTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MDTest.app/MDTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +689,7 @@
 				A15322E11A3EEB5B00849D15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A15322E21A3EEB5B00849D15 /* Build configuration list for PBXNativeTarget "MDTestTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +698,25 @@
 				A15322E41A3EEB5B00849D15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A153230E1A41B23100849D15 /* Build configuration list for PBXNativeTarget "TXMaterialDesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A153230F1A41B23100849D15 /* Debug */,
+				A15323101A41B23100849D15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A15323121A41B23100849D15 /* Build configuration list for PBXNativeTarget "TXMaterialDesignTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15323131A41B23100849D15 /* Debug */,
+				A15323141A41B23100849D15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

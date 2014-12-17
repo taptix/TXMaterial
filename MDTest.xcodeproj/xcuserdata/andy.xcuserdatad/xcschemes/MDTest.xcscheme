@@ -34,6 +34,20 @@
                ReferencedContainer = "container:MDTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A15322FE1A41B23000849D15"
+               BuildableName = "TXMaterialDesignTests.xctest"
+               BlueprintName = "TXMaterialDesignTests"
+               ReferencedContainer = "container:MDTest.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "A15322D41A3EEB5B00849D15"
                BuildableName = "MDTestTests.xctest"
                BlueprintName = "MDTestTests"
+               ReferencedContainer = "container:MDTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A15322FE1A41B23000849D15"
+               BuildableName = "TXMaterialDesignTests.xctest"
+               BlueprintName = "TXMaterialDesignTests"
                ReferencedContainer = "container:MDTest.xcodeproj">
             </BuildableReference>
          </TestableReference>

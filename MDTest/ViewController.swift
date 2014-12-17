@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import TXMaterialDesign
+
 
 class ViewController: UIViewController {
-
-	@IBOutlet weak var progressView: MDProgressView!
+	
+	@IBOutlet var progressViews: [ActivityProgressView]!
+	@IBOutlet weak var progressView: ActivityProgressView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -23,8 +26,19 @@ class ViewController: UIViewController {
 	}
 
 	override func viewDidAppear(animated: Bool) {
-		self.progressView.animateIndeterminate()
+//		self.progressView.animate()
+//		self.progressView.isIndeterminate = true
 	}
 	
+	@IBAction func setProgress(sender: AnyObject) {
+		let slider = sender as UISlider
+		self.progressView.progress = slider.value
+	}
+
+	@IBAction func toggleAction(sender: AnyObject) {
+		for spinner in self.progressViews{
+			spinner.isAnimating = !spinner.isAnimating
+		}
+	}
 }
 

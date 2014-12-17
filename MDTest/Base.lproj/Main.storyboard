@@ -16,27 +16,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cA5-aV-NVa" customClass="MDProgressView" customModule="MDTest" customModuleProvider="target">
-                                <rect key="frame" x="300" y="63" width="40" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cA5-aV-NVa" customClass="ActivityProgressView" customModule="TXMaterialDesign">
+                                <rect key="frame" x="280" y="63" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="IRy-iW-wtT"/>
                                     <constraint firstAttribute="width" constant="40" id="cB4-jo-e3I"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tint">
+                                        <color key="value" red="0.95209246873855591" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isIndeterminate" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="alwaysAnimate" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJQ-Oz-1v2" customClass="ActivityProgressView" customModule="TXMaterialDesign">
+                                <rect key="frame" x="260" y="156" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="0Ma-aR-X4c"/>
+                                    <constraint firstAttribute="width" constant="80" id="tTE-Sn-Jj3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tint">
+                                        <color key="value" red="0.59607843140000005" green="0.1215686275" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isIndeterminate" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAt-OD-8aA">
+                                <rect key="frame" x="277" y="384" width="46" height="30"/>
+                                <state key="normal" title="Toggle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JKl-4H-cNG"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93h-t1-A2N" customClass="ActivityProgressView" customModule="TXMaterialDesign">
+                                <rect key="frame" x="357" y="63" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2lw-sX-qdD"/>
+                                    <constraint firstAttribute="height" constant="40" id="6eK-qd-M85"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isIndeterminate" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Th-ws-DPG" customClass="ActivityProgressView" customModule="TXMaterialDesign">
+                                <rect key="frame" x="191" y="63" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="tfi-YM-o3i"/>
+                                    <constraint firstAttribute="height" constant="40" id="udw-FN-m9a"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tint">
+                                        <color key="value" red="1" green="0.92832954680000002" blue="0.1115820989" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isIndeterminate" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SAA-2q-EQJ">
+                                <rect key="frame" x="158.5" y="438" width="284" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="WGe-bn-Aay"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="setProgress:" destination="BYZ-38-t0r" eventType="valueChanged" id="TYb-JH-fBZ"/>
+                                </connections>
+                            </slider>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SAA-2q-EQJ" firstAttribute="top" secondItem="nAt-OD-8aA" secondAttribute="bottom" constant="24" id="0SO-P2-9aq"/>
+                            <constraint firstItem="93h-t1-A2N" firstAttribute="centerY" secondItem="cA5-aV-NVa" secondAttribute="centerY" id="2K9-aM-sbJ"/>
                             <constraint firstItem="cA5-aV-NVa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="A8L-Zk-HXg"/>
-                            <constraint firstAttribute="centerX" secondItem="cA5-aV-NVa" secondAttribute="centerX" constant="-20" id="DNJ-K3-KY4"/>
+                            <constraint firstItem="cA5-aV-NVa" firstAttribute="leading" secondItem="9Th-ws-DPG" secondAttribute="trailing" constant="49" id="Cp9-Ca-abe"/>
+                            <constraint firstAttribute="centerX" secondItem="cA5-aV-NVa" secondAttribute="centerX" id="DNJ-K3-KY4"/>
+                            <constraint firstItem="93h-t1-A2N" firstAttribute="leading" secondItem="cA5-aV-NVa" secondAttribute="trailing" constant="37" id="KGd-hu-86J"/>
+                            <constraint firstItem="nAt-OD-8aA" firstAttribute="centerX" secondItem="cA5-aV-NVa" secondAttribute="centerX" id="NjO-f4-PLB"/>
+                            <constraint firstItem="fJQ-Oz-1v2" firstAttribute="top" secondItem="cA5-aV-NVa" secondAttribute="bottom" constant="53" id="WwT-Co-9wx"/>
+                            <constraint firstItem="cA5-aV-NVa" firstAttribute="centerX" secondItem="fJQ-Oz-1v2" secondAttribute="centerX" id="caq-r0-vsJ"/>
+                            <constraint firstItem="SAA-2q-EQJ" firstAttribute="centerX" secondItem="nAt-OD-8aA" secondAttribute="centerX" constant="0.5" id="cpo-TV-lXv"/>
+                            <constraint firstItem="9Th-ws-DPG" firstAttribute="centerY" secondItem="cA5-aV-NVa" secondAttribute="centerY" id="hFg-PA-myL"/>
+                            <constraint firstItem="nAt-OD-8aA" firstAttribute="top" secondItem="cA5-aV-NVa" secondAttribute="bottom" constant="281" id="nUh-5j-6g2"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="progressView" destination="cA5-aV-NVa" id="vpA-yv-ars"/>
+                        <outlet property="progressView" destination="cA5-aV-NVa" id="voM-IK-Rva"/>
+                        <outletCollection property="progressViews" destination="fJQ-Oz-1v2" collectionClass="NSMutableArray" id="iqu-vv-x7I"/>
+                        <outletCollection property="progressViews" destination="cA5-aV-NVa" collectionClass="NSMutableArray" id="S18-C0-4XB"/>
+                        <outletCollection property="progressViews" destination="93h-t1-A2N" collectionClass="NSMutableArray" id="IhX-0C-cUF"/>
+                        <outletCollection property="progressViews" destination="9Th-ws-DPG" collectionClass="NSMutableArray" id="ha4-i8-fWv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="422" y="393"/>
+            <point key="canvasLocation" x="329" y="395"/>
         </scene>
     </scenes>
 </document>
