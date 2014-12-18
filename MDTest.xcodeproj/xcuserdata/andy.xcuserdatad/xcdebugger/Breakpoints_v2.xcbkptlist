@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TXMaterialDesign/ActivityProgressView.swift"
-            timestampString = "440527327.10329"
+            timestampString = "440611124.347128"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "animate()"
             landmarkType = "5">
          </BreakpointContent>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TXMaterialDesign/ActivityProgressView.swift"
-            timestampString = "440527327.10329"
+            filePath = "MDTest/ViewController.swift"
+            timestampString = "440611620.389749"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "setProgress(_:animated:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "set0(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

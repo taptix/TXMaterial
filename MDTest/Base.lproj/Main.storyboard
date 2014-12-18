@@ -86,7 +86,7 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vw6-mz-gbB">
-                                <rect key="frame" x="221.5" y="502" width="33" height="30"/>
+                                <rect key="frame" x="221" y="502" width="33" height="30"/>
                                 <state key="normal" title="25%">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -95,7 +95,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vP2-gb-E3C">
-                                <rect key="frame" x="283.5" y="502" width="33" height="30"/>
+                                <rect key="frame" x="283" y="502" width="33" height="30"/>
                                 <state key="normal" title="50%">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -103,8 +103,36 @@
                                     <action selector="set50:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGu-b5-E7m"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kD-ac-VwM">
+                                <rect key="frame" x="172" y="502" width="30" height="30"/>
+                                <state key="normal" title="0%">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="set0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SM3-nX-2S9"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nD6-kG-QEn">
+                                <rect key="frame" x="276" y="540" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCE-jv-bLG">
+                                <rect key="frame" x="191" y="545" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKK-Vk-Fph">
+                                <rect key="frame" x="345" y="502" width="33" height="30"/>
+                                <state key="normal" title="75%">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="set50:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pfc-cI-u58"/>
+                                    <action selector="set75:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4AD-E7-ZUS"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXU-DV-BwG">
-                                <rect key="frame" x="349.5" y="502" width="41" height="30"/>
+                                <rect key="frame" x="399" y="502" width="41" height="30"/>
                                 <state key="normal" title="100%">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -112,44 +140,43 @@
                                     <action selector="set100:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Pp-yM-fAt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kD-ac-VwM">
-                                <rect key="frame" x="172.5" y="502" width="30" height="30"/>
-                                <state key="normal" title="0%">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="set0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SM3-nX-2S9"/>
-                                    <action selector="set25:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eg7-to-5nS"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SAA-2q-EQJ" firstAttribute="top" secondItem="nAt-OD-8aA" secondAttribute="bottom" constant="24" id="0SO-P2-9aq"/>
+                            <constraint firstAttribute="centerX" secondItem="nD6-kG-QEn" secondAttribute="centerX" constant="-0.5" id="0eH-E4-ZH7"/>
                             <constraint firstItem="93h-t1-A2N" firstAttribute="centerY" secondItem="cA5-aV-NVa" secondAttribute="centerY" id="2K9-aM-sbJ"/>
                             <constraint firstItem="cA5-aV-NVa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="A8L-Zk-HXg"/>
                             <constraint firstItem="vw6-mz-gbB" firstAttribute="leading" secondItem="7kD-ac-VwM" secondAttribute="trailing" constant="19" id="Ccn-ww-M74"/>
                             <constraint firstItem="cA5-aV-NVa" firstAttribute="leading" secondItem="9Th-ws-DPG" secondAttribute="trailing" constant="49" id="Cp9-Ca-abe"/>
                             <constraint firstAttribute="centerX" secondItem="cA5-aV-NVa" secondAttribute="centerX" id="DNJ-K3-KY4"/>
                             <constraint firstItem="93h-t1-A2N" firstAttribute="leading" secondItem="cA5-aV-NVa" secondAttribute="trailing" constant="37" id="KGd-hu-86J"/>
-                            <constraint firstItem="WXU-DV-BwG" firstAttribute="leading" secondItem="vP2-gb-E3C" secondAttribute="trailing" constant="33" id="LvW-jL-Wq3"/>
                             <constraint firstItem="nAt-OD-8aA" firstAttribute="centerX" secondItem="cA5-aV-NVa" secondAttribute="centerX" id="NjO-f4-PLB"/>
                             <constraint firstItem="vP2-gb-E3C" firstAttribute="top" secondItem="SAA-2q-EQJ" secondAttribute="bottom" constant="34" id="Vd0-aJ-owB"/>
                             <constraint firstItem="fJQ-Oz-1v2" firstAttribute="top" secondItem="cA5-aV-NVa" secondAttribute="bottom" constant="53" id="WwT-Co-9wx"/>
                             <constraint firstItem="vP2-gb-E3C" firstAttribute="leading" secondItem="vw6-mz-gbB" secondAttribute="trailing" constant="29" id="Y7I-VP-BrD"/>
                             <constraint firstItem="vw6-mz-gbB" firstAttribute="centerY" secondItem="vP2-gb-E3C" secondAttribute="centerY" id="ZRg-UN-JH7"/>
+                            <constraint firstItem="DKK-Vk-Fph" firstAttribute="centerY" secondItem="vP2-gb-E3C" secondAttribute="centerY" id="ZVB-hI-6Ah"/>
                             <constraint firstItem="cA5-aV-NVa" firstAttribute="centerX" secondItem="fJQ-Oz-1v2" secondAttribute="centerX" id="caq-r0-vsJ"/>
                             <constraint firstItem="SAA-2q-EQJ" firstAttribute="centerX" secondItem="nAt-OD-8aA" secondAttribute="centerX" constant="0.5" id="cpo-TV-lXv"/>
+                            <constraint firstAttribute="centerX" secondItem="vP2-gb-E3C" secondAttribute="centerX" id="eYG-yE-A15"/>
+                            <constraint firstItem="nD6-kG-QEn" firstAttribute="top" secondItem="vP2-gb-E3C" secondAttribute="bottom" constant="8" id="f1h-f5-3m8"/>
                             <constraint firstItem="9Th-ws-DPG" firstAttribute="centerY" secondItem="cA5-aV-NVa" secondAttribute="centerY" id="hFg-PA-myL"/>
                             <constraint firstItem="vP2-gb-E3C" firstAttribute="centerY" secondItem="WXU-DV-BwG" secondAttribute="centerY" id="hUN-I9-phw"/>
                             <constraint firstItem="vw6-mz-gbB" firstAttribute="centerY" secondItem="7kD-ac-VwM" secondAttribute="centerY" id="l7w-eE-et0"/>
+                            <constraint firstItem="WXU-DV-BwG" firstAttribute="leading" secondItem="DKK-Vk-Fph" secondAttribute="trailing" constant="21" id="nLk-MH-Whn"/>
                             <constraint firstItem="nAt-OD-8aA" firstAttribute="top" secondItem="cA5-aV-NVa" secondAttribute="bottom" constant="281" id="nUh-5j-6g2"/>
+                            <constraint firstItem="DKK-Vk-Fph" firstAttribute="leading" secondItem="vP2-gb-E3C" secondAttribute="trailing" constant="29" id="oe2-vz-osz"/>
                             <constraint firstItem="vw6-mz-gbB" firstAttribute="leading" secondItem="7kD-ac-VwM" secondAttribute="trailing" constant="19" id="vYy-2a-gXV"/>
+                            <constraint firstItem="iCE-jv-bLG" firstAttribute="centerY" secondItem="nD6-kG-QEn" secondAttribute="centerY" id="wDX-Qh-1Sa"/>
+                            <constraint firstItem="nD6-kG-QEn" firstAttribute="leading" secondItem="iCE-jv-bLG" secondAttribute="trailing" constant="22" id="zQu-HB-HmJ"/>
                             <constraint firstItem="SAA-2q-EQJ" firstAttribute="centerX" secondItem="vP2-gb-E3C" secondAttribute="centerX" id="zZk-s0-T79"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animateSwitch" destination="nD6-kG-QEn" id="aZF-gG-fts"/>
                         <outlet property="progressView" destination="cA5-aV-NVa" id="voM-IK-Rva"/>
+                        <outlet property="slider" destination="SAA-2q-EQJ" id="bz9-9w-CK0"/>
                         <outletCollection property="progressViews" destination="fJQ-Oz-1v2" collectionClass="NSMutableArray" id="iqu-vv-x7I"/>
                         <outletCollection property="progressViews" destination="cA5-aV-NVa" collectionClass="NSMutableArray" id="S18-C0-4XB"/>
                         <outletCollection property="progressViews" destination="93h-t1-A2N" collectionClass="NSMutableArray" id="IhX-0C-cUF"/>
