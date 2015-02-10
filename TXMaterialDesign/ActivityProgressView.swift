@@ -62,7 +62,7 @@ import UIKit
 
 		if	animated{
 			let timingFunction = CAMediaTimingFunction(controlPoints: 0.5, 0.0, 0.5, 1.0)
-			let presentationLayer = self.shapeLayer.presentationLayer() as CAShapeLayer
+			let presentationLayer = self.shapeLayer.presentationLayer() as! CAShapeLayer
 			let progressAnim = CABasicAnimation(keyPath: "strokeEnd")
 			progressAnim.fromValue = presentationLayer.strokeEnd
 			progressAnim.toValue = CGFloat(self.progress)
@@ -91,7 +91,7 @@ import UIKit
 		self.shapeLayer.frame = self.bounds
 		self.shapeLayer.fillColor = UIColor.clearColor().CGColor
 		self.shapeLayer.strokeColor = tint.CGColor
-		self.shapeLayer.lineWidth = frame.size.height / 10.0
+		self.shapeLayer.lineWidth = min(10.0, frame.size.height / 10.0)
 		self.shapeLayer.lineJoin = kCALineJoinRound
 		self.shapeLayer.lineCap = kCALineCapRound
 		self.shapeLayer.strokeStart = 0.0

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8F741BE7-211E-4E6E-94BD-C65450797297</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MDTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>885136D141219AD5A38F540E0B880316FCF5B6F5</key>
+		<string>https://github.com/taptix/TXMaterial</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MDTest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>885136D141219AD5A38F540E0B880316FCF5B6F5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/taptix/TXMaterial</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>885136D141219AD5A38F540E0B880316FCF5B6F5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>885136D141219AD5A38F540E0B880316FCF5B6F5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MDTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>

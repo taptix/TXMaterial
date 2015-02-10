@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double TXMaterialDesignVersionNumber;
 FOUNDATION_EXPORT const unsigned char TXMaterialDesignVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TXMaterialDesign/PublicHeader.h>
-
-
